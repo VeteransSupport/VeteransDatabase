@@ -1,4 +1,4 @@
-create schema user_registry;
+CREATE SCHEMA IF NOT EXISTS user_registry;
 
 DROP TABLE IF EXISTS user_registry.user_type CASCADE;
 
