@@ -1,3 +1,4 @@
+-- user_type
 DROP TABLE user_type;
 
 CREATE TABLE "user_type" (
@@ -6,7 +7,7 @@ CREATE TABLE "user_type" (
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
-
+-- user
 DROP TABLE user;
 
 CREATE TABLE "user" (
@@ -19,7 +20,7 @@ CREATE TABLE "user" (
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
-
+-- charities
 DROP TABLE charities;
 
 CREATE TABLE "charities" (
