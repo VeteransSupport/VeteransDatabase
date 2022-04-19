@@ -11,13 +11,18 @@ CREATE TABLE "user_type" (
 DROP TABLE user;
 
 CREATE TABLE "user" (
-  "id"  INTEGER NOT NULL UNIQUE,
-  "email"  TEXT NOT NULL UNIQUE,
-  "password"  TEXT NOT NULL,
-  "type_id"  INTEGER NOT NULL DEFAULT 5,
-  "charity_id"  INTEGER NOT NULL DEFAULT 1,
-  FOREIGN KEY("type_id") REFERENCES "user_type"("id"),
-  PRIMARY KEY("id" AUTOINCREMENT)
+	"id"	INTEGER NOT NULL UNIQUE,
+	"type_id"	INTEGER NOT NULL DEFAULT 5,
+	"charity_id"	INTEGER NOT NULL DEFAULT 1,
+	"full_name"	TEXT,
+	"email"	TEXT NOT NULL UNIQUE,
+	"service_number"	TEXT,
+	"phone_number"	TEXT,
+	"password"	TEXT NOT NULL,
+	"contacts"	TEXT,
+	"six_digit_code"	INTEGER,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("type_id") REFERENCES "user_type"("id")
 );
 
 -- charities
