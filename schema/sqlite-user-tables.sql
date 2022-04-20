@@ -21,6 +21,8 @@ CREATE TABLE "user" (
 	"password"	TEXT NOT NULL,
 	"contacts"	TEXT,
 	"six_digit_code"	INTEGER,
+	"mood"	TEXT,
+	"last_updated"	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("type_id") REFERENCES "user_type"("id")
 );
