@@ -21,7 +21,7 @@ CREATE TABLE "user" (
 	"password"	TEXT NOT NULL,
 	"contacts"	TEXT,
 	"six_digit_code"	INTEGER,
-	"mood"	TEXT,
+	"mood"	INTEGER,
 	"last_updated"	TEXT,
 	"quiz_answers"	TEXT,
 	FOREIGN KEY("type_id") REFERENCES "user_type"("id"),
