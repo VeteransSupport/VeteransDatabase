@@ -1,5 +1,5 @@
-INSERT INTO user_registry.users_type (type) values ('appAdmin');
-INSERT INTO user_registry.users_type (type) values ('appSupport');
-INSERT INTO user_registry.users_type (type) values ('charityAdmin');
-INSERT INTO user_registry.users_type (type) values ('charitySupport');
-INSERT INTO user_registry.users_type (type) values ('veteran');
+INSERT INTO user_registry.users_type (type) values ('Admin');
+INSERT INTO user_registry.users_type (type) values ('Support Admin');
+INSERT INTO user_registry.users_type (type) values ('Charity Lead');
+INSERT INTO user_registry.users_type (type) values ('Charity Support');
+INSERT INTO user_registry.users_type (type) values ('Veteran');
