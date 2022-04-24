@@ -1,9 +1,9 @@
 -- user_type
-INSERT INTO user_type (name) values ('appAdmin');
-INSERT INTO user_type (name) values ('appSupport');
-INSERT INTO user_type (name) values ('charityAdmin');
-INSERT INTO user_type (name) values ('charitySupport');
-INSERT INTO user_type (name) values ('veteran');
+INSERT INTO user_type (name) values ('Admin');
+INSERT INTO user_type (name) values ('Support Admin');
+INSERT INTO user_type (name) values ('Charity Lead');
+INSERT INTO user_type (name) values ('Charity Support');
+INSERT INTO user_type (name) values ('Veteran');
 
 INSERT INTO quiz (question, mcq1, mcq2, mcq3) values ('Q1. Do you feel tense, nervous or insecure?', 'Not at all', 'For a few days no', 'For more than 2 weeks');
 INSERT INTO quiz (question, mcq1, mcq2, mcq3) values ('Q2. Do you feel down or are you lacking energy?', 'Not at all', 'For a few days no', 'For more than 2 weeks');
