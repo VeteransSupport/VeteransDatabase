@@ -23,8 +23,9 @@ CREATE TABLE "user" (
 	"six_digit_code"	INTEGER,
 	"mood"	TEXT,
 	"last_updated"	TEXT,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("type_id") REFERENCES "user_type"("id")
+	"quiz_answers"	TEXT,
+	FOREIGN KEY("type_id") REFERENCES "user_type"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
 -- charities
@@ -36,4 +37,15 @@ CREATE TABLE "charities" (
   "description"  TEXT NOT NULL,
   "image"  BLOB,
   PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+DROP TABLE quiz;
+
+CREATE TABLE "quiz" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"question"	TEXT NOT NULL,
+	"mcq1"	TEXT NOT NULL,
+	"mcq2"	TEXT NOT NULL,
+	"mcq3"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
